@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.2;
+     
+}
+a {
+    text-decoration: none;
+    color: inherit; /*колір успадковується*/
+
+}
+.bg {
+background-image: url(./assets/pexels-vinnie-de-carvalho-133983131-10216007.jpg);
+height: 200px;
+color: white;
+padding: 20px;
+text-align: right;
+background-size:100%;
+background-position:center;
+}
+.user-card {
+max-width: 500px;
+width: 300px;
+min-width: 400px;
+margin: 50px auto;
+border-radius: 30px;
+box-shadow: 0px 0px 20px gray; /*тінь навколо .bg*/
+overflow: hidden; /*приховує все що виходить за края .bg*/
+text-align: center;
+}
+.user-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: 5px 2px;
+    display: inline-block;
+    margin-top: -90px;
+  
+   
+
+}
