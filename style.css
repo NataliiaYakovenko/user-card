@@ -3,10 +3,15 @@
     margin: 0;
     padding: 0;
 }
+/*html {
+    user-photo-width: 130px; напрклад нам потрібно змінити ромір фото
+    }*/
+
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.2;
+    background-color:rgb(218, 218, 181);
      
 }
 a {
@@ -16,7 +21,7 @@ a {
 }
 .bg {
 background-image: url(./assets/pexels-vinnie-de-carvalho-133983131-10216007.jpg);
-height: 200px;
+height: 190px;
 color: white;
 padding: 20px;
 text-align: right;
@@ -25,23 +30,57 @@ background-position:center;
 }
 .user-card {
 max-width: 500px;
-width: 300px;
+width: 250px;
 min-width: 400px;
 margin: 50px auto;
 border-radius: 30px;
-box-shadow: 0px 0px 20px gray; /*тінь навколо .bg*/
+box-shadow: 0px 0px 40px rgb(69, 68, 68); /*тінь навколо .bg*/
 overflow: hidden; /*приховує все що виходить за края .bg*/
 text-align: center;
+height: 500px;
+}
+.conter-wraper {
+    padding: 0 3px 1px;
 }
 .user-img {
+    /*width: var(--user-photo-width);напрклад нам потрібно змінити ромір фото*/
     width: 150px;
     height: 150px;
+    /*height: var(--user-photo-width);напрклад нам потрібно змінити ромір фото*/
     object-fit: cover;
     border-radius: 50%;
-    object-position: 5px 2px;
+    object-position: 1px 0px;
     display: inline-block;
     margin-top: -90px;
-  
-   
-
+    /*margin-top:calc ((-1)*var(--user-photo-width) )/2;напрклад нам потрібно змінити ромір фото*/
+    border: 2px solid white;
+}
+.user-name {
+    font-size: 1.5rem;
+    margin: 11px 0;
+    color: rgb(37, 37, 37);
+}
+.user-direction {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: rgb(37, 37, 37);
+}
+.user-pisition {
+   font-size: 1.2rem;
+   margin: 10px 0;
+   color: rgb(37, 37, 37);
+}
+.experiense {
+    font-size: 1rem;
+    margin: 18px 0;
+    color: rgb(37, 37, 37);
+}
+.userSicialLink {
+    color: white;
+    font-size: 25px;
+    background-color: gray;
+    border-radius: 50%;
+    width: 31px;
+    height: 25px;
+    margin: 0 20px;
 }

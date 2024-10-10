@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User-card</title>
-    <link rel="stylesheet" href="./reset.css"> <!--для скидання стилів. ставиться самим Першим перед  <link rel="stylesheet" href="style.css" />-->
+    <link rel="stylesheet" href="./reset.css" />
+    <!--для скидання стилів. ставиться самим Першим перед  <link rel="stylesheet" href="style.css" />-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -17,29 +18,42 @@
   </head>
   <body>
     <article class="user-card">
-      <div class="bg"> <!--клас для background-->
-        <i class="fa-solid fa-pencil"></i>   <!--олівець на background-->
+      <div class="bg">
+        <!--клас для background-->
+        <i class="fa-solid fa-pencil"></i>
+        <!--олівець на background-->
       </div>
-      <img class="user-img" src="./assets/1728509501899.jpg" alt="Nataliia Yakovenko" />
-      <!--фото-->
-      <h2>Nataliia Yakovenko</h2>
-      <!--ім"я-->
-      <div>Zaporizhzhia. Ukraine”</div>
-      <!--місце знаходження-->
-      <div>Bank employee</div>
-      <!--посада-->
-      <p>
-        <!--інформація про роботу -->
-        Joint Stock Company “State Saving Bank of Ukraine”, Zaporizhzhia Current
-        position Deputy Head of the department of a retail lending organization
-      </p>
-      <!---- https://fontawesome.com/     cайт, де брати іконки-->
-      <i class="fa-brands fa-facebook"></i>
-      <!--іконка фейсбук-->
-      <i class="fa-brands fa-twitter"></i>
-      <!--іконка твітер-->
-      <i class="fa-brands fa-instagram"></i>
-      <!--іконка інстограм-->
+      <div class="conter-wraper">
+        <img
+          class="user-img"
+          src="./assets/1728509501899.jpg"
+          alt="Nataliia Yakovenko"
+        />
+        <!--фото-->
+        <h2 class="user-name">Nataliia Yakovenko</h2>
+        <!--ім"я-->
+        <div class="user-direction">Zaporizhzhia. Ukraine”</div>
+        <!--місце знаходження-->
+        <div class="user-pisition">Bank employee</div>
+        <!--посада-->
+        <p class="experiense">
+          <!--інформація про роботу -->
+          Joint Stock Company “State Saving Bank of Ukraine”, Zaporizhzhia
+          Current position Deputy Head of the department of a retail lending
+          organization
+        </p>
+        <footer>
+          <div>
+            <!---- https://fontawesome.com/     cайт, де брати іконки-->
+            <i class="userSicialLink fa-brands fa-facebook"></i>
+            <!--іконка фейсбук-->
+            <i class="userSicialLink fa-brands fa-twitter"></i>
+            <!--іконка твітер-->
+            <i class="userSicialLink fa-brands fa-instagram"></i>
+            <!--іконка інстограм-->
+          </div>
+        </footer>
+      </div>
     </article>
   </body>
 </html>
