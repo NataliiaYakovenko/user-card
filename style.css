@@ -1,86 +1,46 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
 }
-/*html {
-    user-photo-width: 130px; напрклад нам потрібно змінити ромір фото
-    }*/
-
-
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.2;
-    background-color:rgb(218, 218, 181);
-     
-}
-a {
-    text-decoration: none;
-    color: inherit; /*колір успадковується*/
-
-}
-.bg {
-background-image: url(./assets/pexels-vinnie-de-carvalho-133983131-10216007.jpg);
-height: 190px;
-color: white;
-padding: 20px;
-text-align: right;
-background-size:100%;
-background-position:center;
+  background-color: rgb(209, 205, 205);
+  display: flex;
+  flex-wrap: wrap;
 }
 .user-card {
-max-width: 500px;
-width: 250px;
-min-width: 400px;
-margin: 50px auto;
-border-radius: 30px;
-box-shadow: 0px 0px 40px rgb(69, 68, 68); /*тінь навколо .bg*/
-overflow: hidden; /*приховує все що виходить за края .bg*/
-text-align: center;
-height: 500px;
+    margin: 10px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 300px;
+  flex-grow: 1;
+  min-width: 260px;
+  max-width: 400px;
 }
-.conter-wraper {
-    padding: 0 3px 1px;
+.edit-btn {
+  align-self: flex-end;
 }
 .user-img {
-    /*width: var(--user-photo-width);напрклад нам потрібно змінити ромір фото*/
-    width: 150px;
-    height: 150px;
-    /*height: var(--user-photo-width);напрклад нам потрібно змінити ромір фото*/
-    object-fit: cover;
-    border-radius: 50%;
-    object-position: 1px 0px;
-    display: inline-block;
-    margin-top: -90px;
-    /*margin-top:calc ((-1)*var(--user-photo-width) )/2;напрклад нам потрібно змінити ромір фото*/
-    border: 2px solid white;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: -20px;
 }
-.user-name {
-    font-size: 1.5rem;
-    margin: 11px 0;
-    color: rgb(37, 37, 37);
+p {
+  text-align: center;
 }
-.user-direction {
-    font-size: 1rem;
-    margin: 10px 0;
-    color: rgb(37, 37, 37);
+.member-section {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    margin-top: auto;
 }
-.user-pisition {
-   font-size: 1.2rem;
-   margin: 10px 0;
-   color: rgb(37, 37, 37);
+.card-footer {
 }
-.experiense {
-    font-size: 1rem;
-    margin: 18px 0;
-    color: rgb(37, 37, 37);
-}
-.userSicialLink {
-    color: white;
-    font-size: 25px;
-    background-color: gray;
-    border-radius: 50%;
-    width: 31px;
-    height: 25px;
-    margin: 0 20px;
+.sosial-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
